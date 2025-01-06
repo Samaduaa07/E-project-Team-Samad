@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Blooming Petals</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/png" href="images/blooming petals logo.jpg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ga+Maamli&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Marcellus&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+            rel="stylesheet">
+            <link rel="stylesheet" href="styles.css">
+            <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="images/website_logo-removebg-preview.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ga+Maamli&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Marcellus&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+            rel="stylesheet">
+    
+    </head>
+
+    <body>
+
+        <header>
+
+
+
+            <input type="checkbox" name="" id="toggler">
+            <label for="toggler" class="fas fa-bars"></label>
+    
+            <a href="logo" class="logo">Blooming <span>Petals</span></a>
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="index.html" class="about">About</a>
+                <a href="index.html" class="close">Products</a>
+                <a href="index.html">Events</a>
+                <a href="index.html" class="review">Reviews</a>
+                <a href="addtocart.html" class="review">Cart</a>
+    
+    
+    
+            </div>
+            </div>
+            <!-- <a href="addtocart.html" class="fas fa-shopping-cart icon1"
+                style="font-size: medium; text-decoration: none; color:black"></a> -->
+    
+            <!-- <a href="wishlist.html" class="fas fa-heart icon"
+                style="font-size: medium; text-decoration: none; color:black"></a> -->
+    
+    
+            <div class="d-flex welcome1">
+                <a href="login.html" class="fas fa-user icon"
+                    style="font-size: medium; text-decoration: none; color:black ;margin-bottom: 7px;"></a>
+                <span class="welcome">
+                    <h3>Welcome,</h3>
+                    <div class="dropdown-menu">
+                        <button onclick="remove()" class="logout-button"><b>Logout</b></button>
+                    </div>
+                </span>
+                <h3 id="change">Guest</h3>
+            </div>
+    
+    
+        </header>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- product section starts -->
+
+    <section class="product" id="product">
+        <div class="heading-wrapper" class="cots">
+            <h1 class="heading">Our <span>Products</span></h1>
+            <select name="" id="blop" onchange="change()" class="tri">
+                <option value="all" selected>All</option>
+                <option value="bdecor">Birthday-decoration</option>
+                <option value="Wdecors">Wedding-decoration</option>
+            </select>
+        </div>
+
+        <center>
+            <div class="open">
+
+            </div>
+        </center>
+
+        <div class="holes">
+            <h3 class="heading1" style="font-weight: bold;">Birthday Decoration</h3>
+            <hr>
+            <div class="box-container">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 style="font-size: 30px; font-weight: bold; color: #e848e8;">10%</h4>
+                                    <img src="images/spider man decor.png" class="card-img" alt=""
+                                        style="height: 250px;">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 style="font-size: 30px; font-weight: bold;">Spider Man Decor</h3>
+                                    <p class="text-center" style="font-weight: bold;">
+                                        Bring superhero magic to your event with our Spider-Man decoration! Featuring
+                                        bold
+                                        colors and web-slinging details, it's the perfect choice for a thrilling
+                                        celebration.
+                                    </p>
+                                    <br>
+                                    <div class="d-flex justify-content-center">
+                                        <h2 style="color: #D5006D; font-size: 40px;font-weight: bold;">$11.99</h2>
+                                        <h4 style="position: relative; top: 10px; text-decoration: line-through; color: gray;"
+                                            class="ms-3">$22.99</h4>
+                                    </div>
+                                    <br>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-danger w-100 fs-4"
+                                        onclick="details('Spider Man Decoration',999.99,'images/spider man decor.png',' Bring superhero magic to your event with our SpiderMan decoration Featuring boldcolors and webslinging details its the perfect choice for a thrilling celebration')">View
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 style="font-size: 30px; font-weight: bold; color: #e848e8;">10%</h4>
+                                    <img src="images/minimouse.jpg" class="card-img" alt="" style="height: 250px;">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 style="font-size: 27.5px; font-weight: bold;">Minnie Mouse Decor</h3>
+                                    <p class="text-center" style="font-weight: bold;">
+                                        Add a touch of Disney charm to your party with our Minnie Mouse decoration.
+                                        Perfect
+                                        for kids' events, it brings a playful and enchanting vibe to the celebration.
+                                    </p>
+                                    <br>
+                                    <div class="d-flex justify-content-center">
+                                        <h2 style="color: #D5006D; font-size: 40px;font-weight: bold;">$24.99</h2>
+                                        <h4 style="position: relative; top: 10px; text-decoration: line-through; color: gray;"
+                                            class="ms-3">$44.99</h4>
+                                    </div>
+                                    <br>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-danger w-100 fs-4"
+                                        onclick="details('Minnie Mouse Decoration',199.99,'images/minimouse.jpg',' Add a touch of Disney charm to your party with our Minnie Mouse decoration. Perfect  for kids events, it brings a playful and enchanting vibe to the celebration')">View
+                                        Details</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 style="font-size: 30px; font-weight: bold; color: #e848e8;">10%</h4>
+                                    <img src="images/baby boy.png" class="card-img" style="height: 250px;">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 style="font-size: 30px; font-weight: bold;">Baby Boy Decoration</h3>
+                                    <p class="text-center" style="font-weight: bold;">
+                                        Celebrate the arrival of your little prince with our adorable Baby Boy
+                                        decoration. Featuring soft hues and charming accents, it's ideal for baby
+                                        showers or birthdays.
+
+                                    </p>
+                                    <br>
+                                    <div class="d-flex justify-content-center">
+                                        <h2 style="color: #D5006D; font-size: 40px;font-weight: bold;">$16.99</h2>
+                                        <h4 style="position: relative; top: 10px; text-decoration: line-through; color: gray;"
+                                            class="ms-3">$22.99</h4>
+                                    </div>
+                                    <br>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-danger w-100 fs-4"
+                                        onclick="details('Baby Boy Decoration',16.99,'images/baby boy.png','Celebrate the arrival of your little prince with our adorable Baby Boy decoration. Featuring soft hues and charming accents, its ideal for baby showers or birthdays.')">View
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box-container hidden-content" style="display: none;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 style="font-size: 30px; font-weight: bold; color: #e848e8;">10%</h4>
+                                    <img src="images/frozen elsa decor.png" class="card-img" alt=""
+                                        style="height: 250px;">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 style="font-size: 30px; font-weight: bold;">Frozen Elsa Decoration</h3>
+                                    <p class="text-center" style="font-weight: bold;">
+                                        Transform your party into a magical winter wonderland with our Frozen Elsa
+                                        decoration. Perfect for fans of the icy queen, it adds an enchanting sparkle to
+                                        your event.
+                                    </p>
+                                    <br>
+                                    <div class="d-flex justify-content-center">
+                                        <h2 style="color: #D5006D; font-size: 40px;font-weight: bold;">$9.99</h2>
+                                        <h4 style="position: relative;top: 10px;text-decoration: line-through; color:gray;"
+                                            class="ms-3">$22.9</h4>
+                                    </div>
+                                    <br>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-danger w-100 fs-4"
+                                        onclick="details('Frozen Elsa Decoration',999.99,'images/frozen elsa decor.png','  Transform your party into a magical winter wonderland with our Frozen Elsa decoration. Perfect for fans of the icy queen, it adds an enchanting sparkle to your event.')">View
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 style="font-size: 30px; font-weight: bold; color: #e848e8;">10%</h4>
+                                    <img src="images/teddy bear decor.png" class="card-img" style="height: 250px;">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 style="font-size: 30px; font-weight: bold;">Teddy Bear Decoration</h3>
+                                    <p class="text-center" style="font-weight: bold;">
+                                        Cuddle up with the cutest party decor! Our Teddy Bear decoration is ideal for
+                                        baby showers or children’s events, bringing warmth and charm to any occasion.
+                                    </p>
+                                    <br>
+                                    <div class="d-flex justify-content-center">
+                                        <h2 style="color: #D5006D; font-size: 40px;font-weight: bold;">$19.99</h2>
+                                        <h4 style="position: relative;top: 10px;text-decoration: line-through; color:gray;"
+                                            class="ms-3">$22.99</h4>
+                                    </div>
+                                    <br>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-danger w-100 fs-4"
+                                        onclick="details('Teddy Bear Decoration',199.99,'images/teddy bear decor.png','Cuddle up with the cutest party decor! Our Teddy Bear decoration is ideal for baby showers or children’s events, bringing warmth and charm to any occasion.')">View
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 style="font-size: 30px; font-weight: bold; color: #e848e8;">10%</h4>
+                                    <img src="images/dinosaur dec.png" class="card-img" alt="" style="height: 250px;">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 style="font-size: 30px; font-weight: bold;">Dinosaur Decoration</h3>
+                                    <p class="text-center" style="font-weight: bold;">
+                                        Step back in time with our Dinosaur decoration! Perfect for adventurous themes,
+                                        it adds a prehistoric flair to your celebration, making it roar-some.
+                                    </p>
+                                    <br>
+                                    <div class="d-flex justify-content-center">
+                                        <h2 style="color: #D5006D; font-size: 40px;font-weight: bold;">$39.99</h2>
+                                        <h4 style="position: relative;top: 10px;text-decoration: line-through; color:gray;"
+                                            class="ms-3">$52.99</h4>
+                                    </div>
+                                    <br>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-danger w-100 fs-4"
+                                        onclick="details('Dinosaur Decoration',199.99,'images/dinosaur dec.png',' Step back in time with our Dinosaur decoration! Perfect for adventurous themes, it adds a prehistoric flair to your celebration, making it roar-some.')">View
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <center> <button id="toggleButton" class="btn btn-primary fs-4" style="margin-top: 30px;">Show More</button>
+            </center>
+        </div>
+
+
+
+        <div class="dots">
+
+            <h3 class="heading1" style="font-weight: bold;">Wedding Decoration</h3>
+            <div class="box-container">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- First Three Cards -->
+                        <div class="col-lg-4">
+                            <div class="card" style="height: 100%;">
+                                <div class="card-header">
+                                    <h4 style="font-size: 30px; font-weight: bold; color: #e848e8;">10%</h4>
+                                    <img src="images/nikaah decor.png" class="card-img" alt="Nikaah Decoration"
+                                        style="height: 250px;">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 style="font-size: 30px; font-weight: bold;">Nikaah Decoration</h3>
+                                    <p class="text-center" style="font-weight: bold;">
+                                        Add elegance and grace to your Nikaah ceremony with our beautiful decorations.
+                                        Featuring delicate designs that capture the essence of love and tradition, this
+                                        setcreates a memorable setting.
+
+
+                                    </p>
+                                    <div class="d-flex justify-content-center">
+                                        <h2 style="color: #D5006D; font-size: 40px; font-weight: bold;">$99.99</h2>
+                                        <h4 style="position: relative; top: 10px; text-decoration: line-through; color: gray;"
+                                            class="ms-3">$122.99</h4>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-danger w-100 fs-4"
+                                        onclick="details('Nikaah Decoration',999.99,'images/nikaah decor.png','Add elegance and grace to your Nikaah ceremony with our beautiful decorations. Featuring delicate designs that capture the essence of love and tradition, this setcreates a memorable setting.')">View
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card" style="height: 100%;">
+                                <div class="card-header">
+                                    <h4 style="font-size: 30px; font-weight: bold; color: #e848e8;">10%</h4>
+                                    <img src="images/barat decor.jpg" class="card-img" alt="Barat Decoration"
+                                        style="height: 250px;">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 style="font-size: 30px; font-weight: bold;">Barat Decoration</h3>
+                                    <p class="text-center" style="font-weight: bold;">
+                                        Celebrate your Barat in style with our stunning decorations. Our exquisite
+                                        designs, vibrant colors, and luxurious accents will make your special day even
+                                        more unforgettable.
+
+
+                                    </p>
+                                    <div class="d-flex justify-content-center">
+                                        <h2 style="color: #D5006D; font-size: 40px; font-weight: bold;">$15.99</h2>
+                                        <h4 style="position: relative; top: 10px; text-decoration: line-through; color: gray;"
+                                            class="ms-3">$22.99</h4>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-danger w-100 fs-4"
+                                        onclick="details('Barat Decoration',199.99,'images/barat decor.jpg','Celebrate your Barat in style with our stunning decorations. Our exquisite designs,  vibrant colors, and luxurious accents will make your special day even more unforgettable.')">View
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card" style="height: 100%;">
+                                <div class="card-header">
+                                    <h4 style="font-size: 30px; font-weight: bold; color: #e848e8;">10%</h4>
+                                    <img src="images/baat pakki decor.jpg" class="card-img" alt="Baat Pakki Decoration"
+                                        style="height: 250px;">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 style="font-size: 30px; font-weight: bold;">Baat Pakki Decoration</h3>
+                                    <p class="text-center" style="font-weight: bold;">
+                                        Celebrate the joyous occasion of Baat Pakki with elegant and colorful
+                                        decorations.Our set adds charm and joy to this special ceremony, making it even
+                                        more memorable.
+
+                                    </p>
+                                    <div class="d-flex justify-content-center">
+                                        <h2 style="color: #D5006D; font-size: 40px; font-weight: bold;">$16.99</h2>
+                                        <h4 style="position: relative; top: 10px; text-decoration: line-through; color: gray;"
+                                            class="ms-3">$26.99</h4>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-danger w-100 fs-4"
+                                        onclick="details('Baat Pakki Decoration',16.99,'images/baat pakki decor.jpg','Celebrate the joyous occasion of Baat Pakki with elegant and colorful decorations.Our set adds charm and joy to this special ceremony, making it even more memorable.')">View
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hidden Cards -->
+                        <div class="col-lg-4 hidden-cards" style="display: none;">
+                            <div class="card" style="margin-top: 50px; height: 535px;">
+                                <div class="card-header" style="height: 100%;">
+                                    <h4 style="font-size: 30px; font-weight: bold; color: #e848e8;">10%</h4>
+                                    <img src="images/mayon decor.png" class="card-img" alt="Mayon Decoration"
+                                        style="height: 250px;">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 style="font-size: 30px; font-weight: bold;">Mayon Decoration</h3>
+                                    <p class="text-center" style="font-weight: bold;">
+                                        Make your Mayon ceremony shine with radiant and joyful decorations. This set
+                                        adds an element of fun and beauty to your special day, perfect for a cheerful
+                                        celebration.
+
+                                    </p>
+                                    <div class="d-flex justify-content-center">
+                                        <h2 style="color: #D5006D; font-size: 40px; font-weight: bold;">$45.99</h2>
+                                        <h4 style="position: relative; top: 10px; text-decoration: line-through; color: gray;"
+                                            class="ms-3">$46.99</h4>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-danger w-100 fs-4"
+                                        onclick="details('Mayon Decoration',999.99,'images/mayon decor.png',' Make your Mayon ceremony shine with radiant and joyful decorations. This set adds an   element of fun and beauty to your special day, perfect for a cheerful celebration.')">View
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 hidden-cards" style="display: none;">
+                            <div class="card" style="margin-top: 50px; height: 535px;">
+                                <div class="card-header">
+                                    <h4 style="font-size: 30px; font-weight: bold; color: #e848e8;">10%</h4>
+                                    <img src="images/walima decor.jpg" class="card-img" alt="Walima Decoration"
+                                        style="height: 250px;">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 style="font-size: 30px; font-weight: bold;">Walima Decoration</h3>
+                                    <p class="text-center" style="font-weight: bold;">
+                                        Create a stunning atmosphere for your Walima with elegant decorations. Our
+                                        premium designs add a luxurious touch to your reception, making it a day to
+                                        remember.
+
+                                    </p>
+                                    <div class="d-flex justify-content-center">
+                                        <h2 style="color: #D5006D; font-size: 40px; font-weight: bold;">$200.99</h2>
+                                        <h4 style="position: relative; top: 10px; text-decoration: line-through; color: gray;"
+                                            class="ms-3">$500.99</h4>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-danger w-100 m-2 fs-4"
+                                        onclick="details('Walima Decoration',199.99,'images/walima decor.jpg',' Create a stunning atmosphere for your Walima with elegant decorations. Our premium  designs add a luxurious touch to your reception, making it a day to remember.')">View
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 hidden-cards" style="display: none;">
+                            <div class="card" style="margin-top: 50px;  height: 535px; ">
+                                <div class="card-header">
+                                    <h4 style="font-size: 30px; font-weight: bold; color: #e848e8;">10%</h4>
+                                    <img src="images/mehndi decor.png" class="card-img" alt="Mehndi Decoration"
+                                        style="height: 250px;">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 style="font-size: 30px; font-weight: bold;">Mehndi Decoration</h3>
+                                    <p class="text-center" style="font-weight: bold;">
+                                        Make your Mehndi night unforgettable with our vibrant and fun decorations. The
+                                        set brings lively colors and a festive atmosphere to your celebration.
+
+                                    </p>
+                                    <div class="d-flex justify-content-center">
+                                        <h2 style="color: #D5006D; font-size: 40px; font-weight: bold;">$399.99</h2>
+                                        <h4 style="position: relative; top: 10px; text-decoration: line-through; color: gray;"
+                                            class="ms-3">$979.99</h4>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-danger w-100 m-2 fs-4"
+                                        onclick="details('Mehndi Decoration',199.99,'images/mehndi decor.png','Make your Mehndi night unforgettable with our vibrant and fun decorations. The set brings lively colors and a festive atmosphere to your celebration.')">View
+                                        Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <center> <button id="toggleButton" class="btn btn-primary fs-4" style="margin-top: 30px;">Show More</button>
+            </center>
+
+        </div>
+    </section>
+    <!-- product section ends -->
+
+       <!-- footer section starts -->
+       <section class="footer tracking-in-contract" id="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3 style="font-weight: bold;">Quick Links</h3>
+                <a href="#Home">Home</a>
+                <a href="#about-us">About</a>
+                <a href="#product">Products</a>
+                <a href="#events">Events</a>
+                <a href="#review">Review</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="box">
+                <h3 style="font-weight: bold;">Extra Links</h3>
+                
+                <a href="sitemap.html">Site Map</a>
+                <a href="addtocart.html">My Orders</a>
+            </div>
+            <div class="box">
+                <h3 style="font-weight: bold;">Location</h3>
+                <a href="map.html">Karachi , Pakistan</a>
+            </div>
+
+            <div class="box">
+                <h3 style="font-weight: bold;">Contact Info</h3>
+                <a href="#">+92-422397033</a>
+                <a href="#">samadtalhaff@gmail.com</a>
+                <a href="#">Karachi , Pakistan</a>
+                <img src="images/paypal.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="credit tracking-in-contract">created by <span> Blooming Petals</span> | All Rights Reversed</div>
+
+
+    </section>
+<!-- footer section ends -->
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
